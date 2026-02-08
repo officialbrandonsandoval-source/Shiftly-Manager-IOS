@@ -22,6 +22,7 @@ struct ConversationSummary: Codable, Identifiable {
     let qualificationScore: Double?
     let lastMessageAt: String?
     let messageCount: Int?
+    let vehicleInterest: String?
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -31,6 +32,7 @@ struct ConversationSummary: Codable, Identifiable {
         case qualificationScore = "qualification_score"
         case lastMessageAt = "last_message_at"
         case messageCount = "message_count"
+        case vehicleInterest = "vehicle_interest"
     }
 
     var displayName: String {

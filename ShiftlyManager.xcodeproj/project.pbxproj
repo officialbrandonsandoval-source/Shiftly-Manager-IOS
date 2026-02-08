@@ -17,6 +17,18 @@
 		A10008 /* DashboardMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008 /* DashboardMetrics.swift */; };
 		A10009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10009 /* Assets.xcassets */; };
 		A10010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10010 /* Preview Assets.xcassets */; };
+		A10011 /* Escalation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011 /* Escalation.swift */; };
+		A10012 /* DealershipConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012 /* DealershipConfig.swift */; };
+		A10013 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013 /* NotificationManager.swift */; };
+		A10014 /* EscalationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10014 /* EscalationsViewModel.swift */; };
+		A10015 /* LeadsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10015 /* LeadsViewModel.swift */; };
+		A10016 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10016 /* SettingsViewModel.swift */; };
+		A10017 /* EscalationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10017 /* EscalationsView.swift */; };
+		A10018 /* LeadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10018 /* LeadsView.swift */; };
+		A10019 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10019 /* SettingsView.swift */; };
+		A10020 /* ScoreBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10020 /* ScoreBar.swift */; };
+		A10021 /* LeadRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10021 /* LeadRow.swift */; };
+		A10022 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10022 /* HapticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +43,18 @@
 		B10009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B10010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C10001 /* ShiftlyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftlyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10011 /* Escalation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Escalation.swift; sourceTree = "<group>"; };
+		B10012 /* DealershipConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealershipConfig.swift; sourceTree = "<group>"; };
+		B10013 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B10014 /* EscalationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscalationsViewModel.swift; sourceTree = "<group>"; };
+		B10015 /* LeadsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadsViewModel.swift; sourceTree = "<group>"; };
+		B10016 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B10017 /* EscalationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscalationsView.swift; sourceTree = "<group>"; };
+		B10018 /* LeadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadsView.swift; sourceTree = "<group>"; };
+		B10019 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B10020 /* ScoreBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBar.swift; sourceTree = "<group>"; };
+		B10021 /* LeadRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadRow.swift; sourceTree = "<group>"; };
+		B10022 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +82,9 @@
 				B10001 /* ShiftlyManagerApp.swift */,
 				E10003 /* Models */,
 				E10004 /* Services */,
+				E10008 /* ViewModels */,
 				E10005 /* Views */,
+				E10009 /* Components */,
 				B10009 /* Assets.xcassets */,
 				E10006 /* Preview Content */,
 			);
@@ -71,6 +97,8 @@
 				B10006 /* Conversation.swift */,
 				B10007 /* Message.swift */,
 				B10008 /* DashboardMetrics.swift */,
+				B10011 /* Escalation.swift */,
+				B10012 /* DealershipConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -79,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				B10005 /* APIClient.swift */,
+				B10013 /* NotificationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -89,8 +118,31 @@
 				B10002 /* DashboardView.swift */,
 				B10003 /* ConversationsListView.swift */,
 				B10004 /* ConversationDetailView.swift */,
+				B10017 /* EscalationsView.swift */,
+				B10018 /* LeadsView.swift */,
+				B10019 /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E10008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B10014 /* EscalationsViewModel.swift */,
+				B10015 /* LeadsViewModel.swift */,
+				B10016 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E10009 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B10020 /* ScoreBar.swift */,
+				B10021 /* LeadRow.swift */,
+				B10022 /* HapticManager.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E10006 /* Preview Content */ = {
@@ -187,6 +239,18 @@
 				A10006 /* Conversation.swift in Sources */,
 				A10007 /* Message.swift in Sources */,
 				A10008 /* DashboardMetrics.swift in Sources */,
+				A10011 /* Escalation.swift in Sources */,
+				A10012 /* DealershipConfig.swift in Sources */,
+				A10013 /* NotificationManager.swift in Sources */,
+				A10014 /* EscalationsViewModel.swift in Sources */,
+				A10015 /* LeadsViewModel.swift in Sources */,
+				A10016 /* SettingsViewModel.swift in Sources */,
+				A10017 /* EscalationsView.swift in Sources */,
+				A10018 /* LeadsView.swift in Sources */,
+				A10019 /* SettingsView.swift in Sources */,
+				A10020 /* ScoreBar.swift in Sources */,
+				A10021 /* LeadRow.swift in Sources */,
+				A10022 /* HapticManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
